@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.fitness.game.ui.pre.FragmentNavigationStart"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_navigation_start">
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentChoice"
+            app:destination="@id/fragmentChoice" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChoice"
+        android:name="com.fitness.game.ui.choice.FragmentChoice"
+        android:label="FragmentChoice"
+        tools:layout="@layout/fragment_choice">
+        <action
+            android:id="@+id/action_fragmentChoice_to_fragmentTraining"
+            app:destination="@id/fragmentTraining" />
+        <action
+            android:id="@+id/action_fragmentChoice_to_fragmentFood"
+            app:destination="@id/fragmentFood" />
+        <action
+            android:id="@+id/action_fragmentChoice_to_fragmentRecommendations"
+            app:destination="@id/fragmentRecommendations" />
+        <action
+            android:id="@+id/action_fragmentChoice_to_fragmentControl"
+            app:destination="@id/fragmentControl" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTraining"
+        android:name="com.fitness.game.ui.screens.FragmentTraining"
+        android:label="FragmentTraining"
+        tools:layout="@layout/fragment_training" />
+    <fragment
+        tools:layout="@layout/fragment_food"
+        android:id="@+id/fragmentFood"
+        android:name="com.fitness.game.ui.screens.FragmentFood"
+        android:label="FragmentFood" />
+    <fragment
+        tools:layout="@layout/fragment_reconmmendations"
+        android:id="@+id/fragmentRecommendations"
+        android:name="com.fitness.game.ui.screens.FragmentRecommendations"
+        android:label="FragmentRecommendations" />
+    <fragment
+        tools:layout="@layout/fragment_control"
+        android:id="@+id/fragmentControl"
+        android:name="com.fitness.game.ui.screens.control.FragmentControl"
+        android:label="FragmentControl" />
+</navigation>

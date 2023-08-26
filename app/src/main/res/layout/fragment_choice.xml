@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.fitness.game.core.library.CustomImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/trainingLayout"
+            android:layout_width="320dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="140dp"
+            android:background="@drawable/bg_choice">
+
+            <TextView
+                android:id="@+id/trainingTitle"
+                android:layout_marginTop="4dp"
+                android:layout_width="216dp"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_choice_purple"
+                android:fontFamily="@font/m400"
+                android:layout_marginEnd="-10dp"
+                android:gravity="center"
+                android:text="@string/text_3"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/trainingImg"
+                app:layout_constraintTop_toTopOf="@+id/trainingImg" />
+
+            <ImageView
+                android:id="@+id/trainingImg"
+                android:layout_width="92dp"
+                android:layout_height="110dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/img_training"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/trainingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m400"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/text_4"
+                app:layout_constraintBottom_toBottomOf="@+id/trainingImg"
+                app:layout_constraintEnd_toStartOf="@+id/trainingImg"
+                app:layout_constraintStart_toStartOf="@+id/trainingTitle"
+                app:layout_constraintTop_toBottomOf="@+id/trainingTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/foodLayout"
+            android:layout_width="320dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="140dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_choice">
+
+            <TextView
+                android:id="@+id/foodTitle"
+                android:layout_marginTop="4dp"
+                android:layout_width="216dp"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_choice_purple"
+                android:fontFamily="@font/m400"
+                android:layout_marginEnd="-10dp"
+                android:gravity="center"
+                android:text="@string/text_5"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/foodImg"
+                app:layout_constraintTop_toTopOf="@+id/foodImg" />
+
+            <ImageView
+                android:id="@+id/foodImg"
+                android:layout_width="92dp"
+                android:layout_height="110dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/img_food"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/foodText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m400"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/text_6"
+                app:layout_constraintBottom_toBottomOf="@+id/foodImg"
+                app:layout_constraintEnd_toStartOf="@+id/foodImg"
+                app:layout_constraintStart_toStartOf="@+id/foodTitle"
+                app:layout_constraintTop_toBottomOf="@+id/foodTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recommendationsLayout"
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/bg_choice">
+
+            <TextView
+                android:id="@+id/recommendationTitle"
+                android:layout_marginTop="4dp"
+                android:layout_width="216dp"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_choice_purple"
+                android:fontFamily="@font/m400"
+                android:layout_marginEnd="-10dp"
+                android:gravity="center"
+                android:text="@string/text_7"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/recommendationImg"
+                app:layout_constraintTop_toTopOf="@+id/recommendationImg" />
+
+            <ImageView
+                android:id="@+id/recommendationImg"
+                android:layout_width="92dp"
+                android:layout_height="110dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/img_recommendations"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/recommendationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m400"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/text_8"
+                app:layout_constraintBottom_toBottomOf="@+id/recommendationImg"
+                app:layout_constraintEnd_toStartOf="@+id/recommendationImg"
+                app:layout_constraintStart_toStartOf="@+id/recommendationTitle"
+                app:layout_constraintTop_toBottomOf="@+id/recommendationTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/controlLayout"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_choice">
+
+            <TextView
+                android:id="@+id/controlTitle"
+                android:layout_marginTop="4dp"
+                android:layout_width="216dp"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_choice_purple"
+                android:fontFamily="@font/m400"
+                android:layout_marginEnd="-10dp"
+                android:gravity="center"
+                android:text="@string/text_9"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/controlImg"
+                app:layout_constraintTop_toTopOf="@+id/controlImg" />
+
+            <ImageView
+                android:id="@+id/controlImg"
+                android:layout_width="92dp"
+                android:layout_height="110dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/img_control"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/controlText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m400"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/text_10"
+                app:layout_constraintBottom_toBottomOf="@+id/controlImg"
+                app:layout_constraintEnd_toStartOf="@+id/controlImg"
+                app:layout_constraintStart_toStartOf="@+id/controlTitle"
+                app:layout_constraintTop_toBottomOf="@+id/controlTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
